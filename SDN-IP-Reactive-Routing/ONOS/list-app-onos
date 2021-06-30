@@ -1,0 +1,17 @@
+##enable apps SDN-IP
+*   8 org.onosproject.yang                 2.5.0    YANG Compiler and Runtime
+*   9 org.onosproject.config               2.5.0    Dynamic Configuration
+*  17 org.onosproject.drivers              2.5.0    Default Drivers
+*  18 org.onosproject.optical-model        2.5.0    Optical Network Model
+*  27 org.onosproject.fwd                  2.5.0    Reactive Forwarding
+*  28 org.onosproject.hostprovider         2.5.0    Host Location Provider
+*  35 org.onosproject.gui2                 2.5.0    ONOS GUI2
+*  47 org.onosproject.lldpprovider         2.5.0    LLDP Link Provider
+*  48 org.onosproject.openflow-base        2.5.0    OpenFlow Base Provider
+*  49 org.onosproject.openflow             2.5.0    OpenFlow Provider Suite
+*  58 org.onosproject.route-service        2.5.0    Route Service Server
+*  82 org.onosproject.proxyarp             2.5.0    Proxy ARP/NDP
+*  90 org.onosproject.openflow-message     2.5.0    Control Message Stats Provider
+* 104 org.onosproject.intentsynchronizer   2.5.0    Intent Synchronizer
+* 105 org.onosproject.sdnip                2.5.0    SDN-IP
+* 106 org.onosproject.reactive-routing     2.5.0    SDN-IP Reactive Routing
