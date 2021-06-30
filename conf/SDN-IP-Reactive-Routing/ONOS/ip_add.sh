@@ -1,3 +1,4 @@
+# ip address configuration of ONOS controller
 sudo tee -a /etc/network/interfaces << END
 auto ens3
 iface ens3 inet dhcp
