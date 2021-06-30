@@ -1,0 +1,74 @@
+{
+    "ports" : {
+        "of:0000d2d7a716c549/4" : {
+            "interfaces" : [
+                {
+                    "ips"  : [ "102.10.1.99/24" ],
+                    "mac"  : "0c:f4:3c:5d:4d:00"
+                }
+            ]
+        },
+        "of:0000ea86a6c61c4d/4" : {
+            "interfaces" : [
+                {
+                    "ips"  : [ "102.10.2.99/24" ],
+                    "mac"  : "0c:f4:3c:a1:b0:00"
+                }
+            ]
+        },
+        "of:0000d6dd139e5442/4" : {
+            "interfaces" : [
+                {
+                    "ips"  : [ "192.168.2.254/24" ],
+                    "mac"  : "00:00:00:00:00:01"
+                }
+            ]
+        },
+        "of:00004eba4d818843/5" : {
+            "interfaces" : [
+                {
+                    "ips"  : [ "192.168.3.254/24" ],
+                    "mac"  : "00:00:00:00:00:01"
+                }
+            ]
+        }
+    },
+    "apps" : {
+        "org.onosproject.router" : {
+            "bgp" : {
+                "bgpSpeakers" : [
+                    {
+                        "name" : "speaker1",
+                        "connectPoint" : "of:00005a55651b9149/6",
+                        "peers" : [
+                            "102.10.1.20",
+                            "102.10.2.20"
+                        ]
+                    }
+                ]
+            }
+        },
+       "org.onosproject.reactive.routing" : {
+            "reactiveRouting" : {
+                "ip4LocalPrefixes" : [
+                    {
+                        "ipPrefix" : "192.168.2.0/24",
+                        "type" : "PUBLIC",
+                        "gatewayIp" : "192.168.2.254"
+                    },
+                    {
+                        "ipPrefix" : "192.168.3.0/24",
+                        "type" : "PUBLIC",
+                        "gatewayIp" : "192.168.3.254"
+                    }
+                ],
+                "ip6LocalPrefixes" : [
+                ],
+                "virtualGatewayMacAddress" : "00:00:00:00:00:01"
+            }
+        }
+    }
+}
+
+org.onosproject.routing.bgp.BgpSessionManager.cfg
+2000=bgpPort
