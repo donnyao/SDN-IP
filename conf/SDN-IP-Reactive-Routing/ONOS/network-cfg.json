@@ -71,4 +71,4 @@
 }
 
 org.onosproject.routing.bgp.BgpSessionManager.cfg
-2000=bgpPort
+2000=bgpPorts
