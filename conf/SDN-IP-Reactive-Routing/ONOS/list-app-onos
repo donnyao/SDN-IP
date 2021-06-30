@@ -1,4 +1,4 @@
-##enable apps SDN-IP
+##enable apps on ONOS controller
 *   8 org.onosproject.yang                 2.5.0    YANG Compiler and Runtime
 *   9 org.onosproject.config               2.5.0    Dynamic Configuration
 *  17 org.onosproject.drivers              2.5.0    Default Drivers
