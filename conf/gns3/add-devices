@@ -7,6 +7,13 @@ bash gns3-remote-install.sh --with-iou --with-i386-repository
 #gns3gui
 sudo apt install gns3-gui
 
+#add user to the following group:
+usermod -aG ubridge sdx
+usermod -aG libvirt sdx
+usermod -aG kvm sdx
+usermod -aG wireshark sdx
+usermod -aG docker sdx
+
 ##add devices
 #FRR:qemu
 1. Dwonload FRR Qemu https://sourceforge.net/projects/gns-3/files/Qemu%20Appliances/frr-7.3.1.qcow2/download?use_mirror=kumisystems
