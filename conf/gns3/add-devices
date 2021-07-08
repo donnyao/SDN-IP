@@ -1,0 +1,29 @@
+##install GNS3 server & GUI
+#gns3 sever
+cd /tmp
+curl https://raw.githubusercontent.com/GNS3/gns3-server/master/scripts/remote-install.sh > gns3-remote-install.sh
+bash gns3-remote-install.sh --with-iou --with-i386-repository
+
+#gns3gui
+sudo apt install gns3-gui
+
+##add devices
+#FRR:qemu
+1. Dwonload FRR Qemu https://sourceforge.net/projects/gns-3/files/Qemu%20Appliances/frr-7.3.1.qcow2/download?use_mirror=kumisystems
+2. Open GNS3 GUI
+3. Click on Browse all devices
+4. new template
+5. install an appliance from GNS3 server (recomended)
+6. search FRR
+7. Install FRR Qemu > Install the appliance on your local computer > import
+
+#ovs:docker
+1. Dwonload FRR Qemu https://sourceforge.net/projects/gns-3/files/Qemu%20Appliances/frr-7.3.1.qcow2/download?use_mirror=kumisystems
+1. Open GNS3 GUI
+2. Click on Browse all devices
+3. new template
+4. install an appliance from GNS3 server (recomended)
+5. search Open vSwitch management
+6. Install Open vSwitch management Docker > Install the appliance on your local computer > install
+7. Drag and drop Open vSwitch management to workspace
+8. wait til downloading done
