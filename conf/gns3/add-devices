@@ -18,7 +18,6 @@ sudo apt install gns3-gui
 7. Install FRR Qemu > Install the appliance on your local computer > import
 
 #ovs:docker
-1. Dwonload FRR Qemu https://sourceforge.net/projects/gns-3/files/Qemu%20Appliances/frr-7.3.1.qcow2/download?use_mirror=kumisystems
 1. Open GNS3 GUI
 2. Click on Browse all devices
 3. new template
