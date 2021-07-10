@@ -1,3 +1,7 @@
+#enable nested virtualization VT-x/AMD-v virtualbox
+cd C:\Program Files\Oracle\VirtualBox
+VBoxManage modifyvm sdx --nested-hw-virt on
+
 ##install GNS3 server & GUI
 #gns3 sever
 cd /tmp
