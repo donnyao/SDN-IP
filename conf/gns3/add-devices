@@ -5,9 +5,9 @@ curl https://raw.githubusercontent.com/GNS3/gns3-server/master/scripts/remote-in
 bash gns3-remote-install.sh --with-iou --with-i386-repository
 
 #gns3gui
-sudo add-apt-repository ppa:gns3/ppa
-sudo apt update                                
-sudo apt install gns3-gui gns3-server
+add-apt-repository ppa:gns3/ppa
+apt update                                
+apt install gns3-gui gns3-server
 
 #add user to the following group:
 usermod -aG ubridge sdx
