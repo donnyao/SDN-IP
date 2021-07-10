@@ -7,7 +7,7 @@ bash gns3-remote-install.sh --with-iou --with-i386-repository
 #gns3gui
 add-apt-repository ppa:gns3/ppa
 apt update                                
-apt install gns3-gui gns3-server
+apt install gns3-gui
 
 #add user to the following group:
 usermod -aG ubridge sdx
