@@ -16,6 +16,16 @@ usermod -aG kvm sdx
 usermod -aG wireshark sdx
 usermod -aG docker sdx
 
+#tapinterface
+sudo tunctl -u sdx -t tap0
+sudo ifconfig tap0 0.0.0.0 promisc up
+sudo ifconfig enp0s8 0.0.0.0 promisc up
+sudo brctl addbr br0
+sudo brctl addif br0 tap0
+sudo brctl addif br0 enp0s8
+sudo ifconfig br0 up
+sudo ifconfig br0 192.168.56.99/24
+
 ##add devices
 #FRR:qemu
 1. Dwonload FRR Qemu https://sourceforge.net/projects/gns-3/files/Qemu%20Appliances/frr-7.3.1.qcow2/download?use_mirror=kumisystems
